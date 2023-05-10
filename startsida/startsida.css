@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/*  FIX FÖR MONICA */
+#monica-content-root {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-image: url(/bilder/bakgrund.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* För att göra layouten responsiv */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1{
+        left: 50px;
+    }
+
+    .nav{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+/* Header-styling */
+header {
+    background-color: #F8C471;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.topbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+nav li{
+    display:block;
+    float:left;
+    margin-right:10px;
+}
+
+nav ul div {
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    margin-right: 50px;
+}
+
+/* Main-styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    margin-left: 5px;
+}
+
+div {
+    width: 45%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.card{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.recept img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.recept {
+    width: 100%;
+    background-color: #cac6c6c5;
+    border-radius: 10px;
+    float: left;
+}
+
+.recept:first-of-type,
+.recept:only-of-type,
+.table__middleleft:last-of-type {
+    border-radius: 10px;
+}
+
+.button__mer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F8C471;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer-styling */
+footer {
+    background-color: #F8C471;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    margin-top: 40px;
+}

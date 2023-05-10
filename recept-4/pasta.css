@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/*  FIX FÖR MONICA */
+#monica-content-root {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-image: url(/bilder/bakgrund_recept.jpg);
+    background-size: cover;
+}
+
+/* För att göra layouten responsiv */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+header {
+    background-color: #F8C471;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul div {
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+li{
+    margin-right: 50px;
+}
