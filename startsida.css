@@ -36,7 +36,8 @@ body {
 
 /* Header-styling */
 header {
-    background-color: #F8C471;
+    /* background-color: #F8C471; */
+    background-color: #f6ab32;
     color: #fff;
     padding: 20px;
     text-align: center;
