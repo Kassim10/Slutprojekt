@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pannkaka</title>
+    <link rel="stylesheet" type="" href="../../receptsida.css">
+    <link rel="stylesheet" href="../../checkbox.css">
+</head>
+
+<body>
+    <header>
+        <h1>STUDENT RECEPT</h1>
+        <nav>
+            <ul>
+                <li class="startsida"><a href="/index.html">Startsida</a></li>
+                <li class="om"><a onclick="scrollToElement('target-element')" href="#om-oss" id="om-oss-link">Om oss</a>
+                </li>
+                <li class="kontakta"><a onclick="scrollToElement('target-element')" href="#kontakta-oss">Kontakta
+                        oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="TopButton" class="topbutton" onclick="scrollToTop()">^</button>
+
+    <div class="receptbox">
+
+        <img src="/bilder/pannkaka.jpg" alt="Receptbild" height="500" width="400">
+
+        <div class="recipe">
+            <h2>Pannkaka</h2>
+            <h3>Ingredienser</h3>
+            <ul>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka4" />
+                    <label for="kaka4" class="check-box"><span class="hej">Vetemjöl 3 dl</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka5" />
+                    <label for="kaka5" class="check-box"><span class="hej">Mjölk 6 dl</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka6" />
+                    <label for="kaka6" class="check-box"><span class="hej">Salt ½ tsk</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka7" />
+                    <label for="kaka7" class="check-box"><span class="hej">Smör 2 msk</span></label>
+                </div>
+            </ul>
+        </div>
+
+        <div class="tillagning">
+            <h3>Tillagning</h3>
+            <!-- <ol> -->
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka" />
+                    <label for="kaka" class="check-box"><span class="hej">Vispa ut mjölet i hälften av mjölken till en slät smet. Vispa i resterande mjölk, ägg och salt.</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka1" />
+                    <label for="kaka1" class="check-box"><span class="hej">Låt smeten svälla ca 10 min.</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka2" />
+                    <label for="kaka2" class="check-box"><span class="hej">Smält smör i en stekpanna och häll ner i smeten. Grädda tunna pannkakor.</span></label>
+                </div>
+            <!-- </ol> -->
+        </div>
+    </div>
+
+
+    <footer>
+        <h4>Enkla recept för dig som har ont om tid och pengar</h4>
+        <p id="target-element" class="footer">Vi är matspecialister för unga studenter och har mycket erfarenheter inom mat och recept</p>
+        <p id="target-element" class="footer">Gmail: Student.recept@gmail.com</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Omelett</title>
+    <link rel="stylesheet" type="" href="../../receptsida.css">
+    <link rel="stylesheet" href="../../checkbox.css">
+</head>
+
+<body>
+    <header>
+        <h1>STUDENT RECEPT</h1>
+        <nav>
+            <ul>
+                <li class="startsida"><a href="/index.html">Startsida</a></li>
+                <li class="om"><a onclick="scrollToElement('target-element')" href="#om-oss" id="om-oss-link">Om oss</a>
+                </li>
+                <li class="kontakta"><a onclick="scrollToElement('target-element')" href="#kontakta-oss">Kontakta
+                        oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="TopButton" class="topbutton" onclick="scrollToTop()">^</button>
+
+    <div class="receptbox">
+
+        <img src="/bilder/omelett.jpg" alt="Receptbild" height="500" width="400">
+
+        <div class="recipe">
+            <h2>Omelett</h2>
+            <h3>Ingredienser</h3>
+            <ul>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka4" />
+                    <label for="kaka4" class="check-box"><span class="hej">Ägg 6 st</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka5" />
+                    <label for="kaka5" class="check-box"><span class="hej">Mjölk 1 dl</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka6" />
+                    <label for="kaka6" class="check-box"><span class="hej">Salt</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka7" />
+                    <label for="kaka7" class="check-box"><span class="hej">Peppar</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka8" />
+                    <label for="kaka8" class="check-box"><span class="hej">Smör eller margarin 2 msk</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka9" />
+                    <label for="kaka9" class="check-box"><span class="hej">Färsk persilja</span></label>
+                </div>
+            </ul>
+        </div>
+
+        <div class="tillagning">
+            <h3>Tillagning</h3>
+            <!-- <ol> -->
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka" />
+                    <label for="kaka" class="check-box"><span class="hej">Vispa ihop ägg, mjölk, salt och peppar lätt, så att allt precis bara blandas.</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka1" />
+                    <label for="kaka1" class="check-box"><span class="hej">Hetta upp en stekpanna och låt matfettet fräsa så att det får en aning färg.</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka2" />
+                    <label for="kaka2" class="check-box"><span class="hej">Häll i omelettsmeten. Rör med en trägaffel så att lös smet kan rinna ner mot bottnen. Omeletten är klar när den fortfarande är krämig på ytan och har släppt i kanterna.</span></label>
+                </div>
+                <div class="checkbox-wrapper-19 mb">
+                    <input type="checkbox" id="kaka3" />
+                    <label for="kaka3" class="check-box"><span class="hej">Vik omeletten dubbel och servera gärna med klippt persilja.</span></label>
+                </div>
+            <!-- </ol> -->
+        </div>
+    </div>
+
+
+    <footer>
+        <h4>Enkla recept för dig som har ont om tid och pengar</h4>
+        <p id="target-element" class="footer">Vi är matspecialister för unga studenter och har mycket erfarenheter inom mat och recept</p>
+        <p id="target-element" class="footer">Gmail: Student.recept@gmail.com</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

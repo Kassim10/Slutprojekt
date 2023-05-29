@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
 
@@ -9,24 +9,50 @@
     display: none;
 }
 
-body {
-    margin: 0;
-    background-image: url(/bilder/bakgrund.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 /* För att göra layouten responsiv */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 20px;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     h1{
         left: 50px;
     }
 
-    .nav{
+    div{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+body {
+    margin: 0;
+    background-image: url(/bilder/bakgrund_recept.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+/* För att göra layouten responsiv */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    h1 {
+        left: 50px;
+    }
+
+    .nav {
         display: grid;
         justify-content: center;
     }
@@ -55,6 +81,12 @@ h1 {
     justify-content: center;
 }
 
+img {
+    background-size: auto;
+    border-radius: 10px;
+    float: right;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -63,10 +95,11 @@ nav ul {
     margin-top: 20px;
     text-align: center;
 }
-nav li{
-    display:block;
-    float:left;
-    margin-right:10px;
+
+nav li {
+    display: block;
+    float: left;
+    margin-right: 10px;
 }
 
 nav ul div {
@@ -85,20 +118,26 @@ a {
     color: black;
 }
 
-li{
+li {
     margin-right: 50px;
 }
 
-/* Main-styling */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 40px;
-    padding: 20px;
+/* Receptbox-styling */
+
+.receptbox {
+    /* border: 1px solid #000; */
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+
+    font-size: 1.2rem;
 }
 
-ul {
+.receptbox ol li {
+    margin-bottom: 10px;
+}
+
+/* ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -108,58 +147,17 @@ ul {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
-p{
+p {
     margin-left: 5px;
 }
 
-div {
-    width: 45%;
-    margin-bottom: 40px;
-    position: relative;
+
+.mb {
+    margin-bottom: 15px;
 }
 
-.card{
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.recept img {
-    display: block;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.recept {
-    width: 100%;
-    background-color: #cac6c6c5;
-    border-radius: 10px;
-    float: left;
-}
-
-.recept:first-of-type,
-.recept:only-of-type,
-.table__middleleft:last-of-type {
-    border-radius: 10px;
-}
-
-.button__mer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #F8C471;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 /* Footer-styling */
 footer {
@@ -169,3 +167,33 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* Checkbox-styling */
+/* input[type="checkbox"] {
+    display: none;
+} */
+
+/* ol li {
+    position: relative;
+    padding-left: 25px;
+}
+
+ol li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+}
+
+input[type="checkbox"]:checked + ol li::before {
+    content: "";
+    border-color: #000;
+    background-color: #000;
+}
+
+input[type="checkbox"]:checked + ol li {
+    text-decoration: line-through;
+} */
