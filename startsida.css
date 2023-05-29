@@ -36,13 +36,11 @@ body {
 
 /* Header-styling */
 header {
-    /* background-color: #F8C471; */
-    background-color: #f6ab32;
-    color: #fff;
+    background-color: #F8C471;
+    color: #000;
     padding: 20px;
     text-align: center;
 }
-
 
 
 .topbutton {
@@ -80,14 +78,14 @@ nav ul div {
 
 
 nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 li{
@@ -159,7 +157,7 @@ div {
     left: 50%;
     transform: translateX(-50%);
     background-color: #F8C471;
-    color: #fff;
+    color: #000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -173,7 +171,7 @@ div {
 /* Footer-styling */
 footer {
     background-color: #F8C471;
-    color: #fff;
+    color: #000;
     text-align: left;
     padding: 20px;
     margin-top: 40px;
